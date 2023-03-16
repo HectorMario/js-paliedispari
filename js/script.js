@@ -29,11 +29,13 @@ function palin(lopo){
 
 function num (){
     let pc = Math.ceil(Math.random()*5);
-    let userNum = prompt("dimi un numero tra 1 e 5")
+    let userNum = parseInt(prompt("dimi un numero tra 1 e 5"));
 
-    let resultUser = prompt("La risposta es pari o dispari?")
+    let resultUser = prompt("La risposta es pari o dispari?");
 
     let sum = pc + userNum;
+
+    console.log(sum);
 
     if(sum % 2 == 0 && resultUser == "pari"){
         alert("hai vinto")
@@ -43,5 +45,5 @@ function num (){
 }
 
 
-palin("non");
+palin(prompt("dimi una parola"));
 num();
